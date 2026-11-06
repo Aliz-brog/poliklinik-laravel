@@ -8,6 +8,8 @@ class JadwalPeriksa extends Model
 {
     protected $table = 'jadwal_periksa';
 
+    public $timestamps = false;
+
     protected $fillable = [
         'id_dokter',
         'hari',

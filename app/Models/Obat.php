@@ -8,6 +8,8 @@ class Obat extends Model
 {
     protected $table = 'obat';
 
+    public $timestamps = false;
+
     protected $fillable = [
         'nama_obat',
         'kemasan',

@@ -8,11 +8,13 @@ class Periksa extends Model
 {
     protected $table = 'periksa';
 
+    public $timestamps = false;
+
     protected $fillable = [
         'id_daftar_poli',
         'tgl_periksa',
         'catatan',
-        'biaya_periksa'
+        'biaya_periksa',
     ];
 
     public function daftarPoli()

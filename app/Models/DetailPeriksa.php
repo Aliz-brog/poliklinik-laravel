@@ -8,9 +8,11 @@ class DetailPeriksa extends Model
 {
     protected $table = 'detail_periksa';
 
+    public $timestamps = false;
+
     protected $fillable = [
         'id_periksa',
-        'id_obat'
+        'id_obat',
     ];
 
     public function periksa()

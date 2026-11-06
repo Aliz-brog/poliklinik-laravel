@@ -8,11 +8,13 @@ class DaftarPoli extends Model
 {
     protected $table = 'daftar_poli';
 
+    public $timestamps = false;
+
     protected $fillable = [
         'id_pasien',
         'id_jadwal',
         'keluhan',
-        'no_antrian'
+        'no_antrian',
     ];
 
     public function pasien()
